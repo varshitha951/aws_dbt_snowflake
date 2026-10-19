@@ -1,0 +1,26 @@
+aws_dbt_snowflake_project:
+  outputs:
+    dev:
+      account: KNCLJUK-HK25013
+      database: AIRBNB
+      password: Varshi@1372004
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: VARSH
+      warehouse: COMPUTE_WH
+  target: dev
+netflix_dbt:
+  outputs:
+    dev:
+      account: eendcqd-gs89619
+      database: NETFLIX_DB
+      password: Varshi@1372004
+      role: ACCOUNTADMIN
+      schema: STAGING
+      threads: 4
+      type: snowflake
+      user: varsh137
+      warehouse: NETFLIX_WH
+  target: dev
